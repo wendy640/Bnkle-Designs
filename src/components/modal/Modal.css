@@ -1,0 +1,96 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  height: 450px;
+  max-width: 100%;
+  padding-top:40px;
+  position: relative;
+  overflow: hidden;
+margin-top: 70px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;color: #dfdfdf;
+}
+.modal-header {
+  font-size: 14px;
+  margin: 2px 0;
+}
+.flex-item-left{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.modal-content{
+  text-align: left;
+  font-size: 8.5px;
+  margin: 8px 0;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: rgb(163, 163, 163);
+}
+
+.modal-image {
+  width: 100%;
+  height: 265px;
+  
+ }
+  
+  .modal-card-content{
+    padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; margin-left:10px;
+  margin-right: 10px;
+  
+  }
+
+.author-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+margin-top: 7px;
+}
+.flex-item-left {
+  font-size: 7px;
+  color: #999;
+  padding-top: 4px;
+}
+.author-avatar {
+  
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.dash-modal{
+ color: #999;
+  margin-left: -2px;
+  margin-right:-2px;
+
+ font-size: 4px;
+}
