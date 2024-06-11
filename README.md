@@ -1,10 +1,25 @@
-# Getting Started with Create React App
+# Project Setup
+Prerequisites
+- Node.js (version 14.x or higher)
+- npm (version 6.x or higher)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation
+1. Clone the repository
+  <> git clone https://github.com/your-username/bnkle-frontend-test.git
+  cd bnkle-frontend-test </>
 
-## Available Scripts
+2. Install dependencies:
+  npm install
 
-In the project directory, you can run:
+3. Run the project:
+  npm start
+
+## Application Structure
+** 
+
+
+
+
 
 ### `npm start`
 

@@ -1,15 +1,23 @@
 import React from "react";
 import { CardAnalytics } from "../../type";
 import "./Analytics.css";
+import { useSelector } from "react-redux";
+import { RootState } from "../redux/store";
 
-interface AnalyticsProps {
-	cardAnalytics: CardAnalytics[];
-}
+// interface AnalyticsProps {
+// 	cardAnalytics: CardAnalytics[];
+// }
 
-const Analytics: React.FC<AnalyticsProps> = ({ cardAnalytics }) => {
+const Analytics: React.FC = () => {
+	const cardAnalytics = useSelector(
+				(state: RootState) => state.cardAnalytics.cardAnalytics
+			);
 	return (
 		<div className="analytics">
 			<h2>Card Analytics</h2>
+			{cardAnalytics.length === 0 ? (
+        <p>No card analytics available</p>
+      ):(
 			<table>
 				<thead>
 					<tr>
@@ -30,6 +38,8 @@ const Analytics: React.FC<AnalyticsProps> = ({ cardAnalytics }) => {
 					))}
 				</tbody>
 			</table>
+	  )}
+			
 		</div>
 	);
 };
