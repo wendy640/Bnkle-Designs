@@ -5,8 +5,8 @@ Prerequisites
 
 ## Installation
 1. Clone the repository
-  <> git clone https://github.com/your-username/bnkle-frontend-test.git
-  cd bnkle-frontend-test </>
+  <> git clone https://github.com/wendy640/Bnkle-Designs.git
+  cd Bnkle-Designs </>
 
 2. Install dependencies:
   npm install
@@ -44,7 +44,9 @@ Prerequisites
 - Container width is set to 1200px.
 - No third-party component libraries or CSS frameworks were used.
 
-
+## Deployment
+- vercel
+- link: https://bnkle-designs.vercel.app/
 
 
 
