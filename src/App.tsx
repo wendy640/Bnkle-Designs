@@ -5,7 +5,7 @@ import Home from "./components/pages/Home";
 import Navbar from "./components/navbar/Navbar";
 import "./App.css";
 import { Provider } from "react-redux";
-import store from "./components/redux/store";
+import store from "./redux/store";
 import Analytics from "./components/pages/Analytics";
 
 const App: React.FC = () => {
