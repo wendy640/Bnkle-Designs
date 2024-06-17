@@ -19,12 +19,10 @@ const Home: React.FC = () => {
 	const records = useSelector(
 		(state: RootState) => state.cardAnalytics.cardAnalytics
 	);
-	// Clear local storage (e.g., for logout or reset)
-	//localStorage.removeItem("analytics");
+
 	useEffect(() => {
 		console.log(status);
 		if (status === "idle" || records.length === 0) {
-			//dispatch(fetchCardAnalyticsStart());
 			const fetchData = async () => {
 				try {
 					const response = await fetch(
@@ -35,9 +33,8 @@ const Home: React.FC = () => {
 					setLocalPosts(data);
 
 					const initialCardAnalytics = defineCardanalytics(data);
-				
+
 					localStorage.setItem("posts", JSON.stringify(data));
-					
 
 					dispatch(fetchCardAnalyticsSuccess(initialCardAnalytics));
 				} catch (error) {
@@ -45,9 +42,7 @@ const Home: React.FC = () => {
 				}
 			};
 
-	
 			fetchData();
-		
 		} else {
 			const storedPosts = localStorage.getItem("posts");
 			if (storedPosts) {
@@ -75,7 +70,7 @@ const Home: React.FC = () => {
 				}
 				return card;
 			});
-		
+
 			dispatch(updateCardAnalytics(updatedAnalytics));
 		}
 	};
